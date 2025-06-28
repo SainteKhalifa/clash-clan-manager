@@ -5,11 +5,20 @@ Requires python3.9
 
 ```
 {
-	"clanTag": "QVCJLCP",
-	"key": "Notes password"
+	"token": "xxxxxxx",
+	"clanTag": "xxxxxxxx",
+	"key": "Notes password",
 	"email": "API Account email https://developer.clashofclans.com/",
 	"password": "API Account password",
-	"keyName": "clanManager"
+	"keyName": "clanManager",
+	"history": 8
+}
+```
+
+<br>Add data/warlog.json
+```
+{
+  "items": []
 }
 ```
 

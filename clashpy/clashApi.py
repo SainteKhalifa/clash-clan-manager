@@ -36,7 +36,7 @@ class ClashApi:
         else:
             self._clanName = response.json()["name"]
 
-    def _getToken(self):
+    def _getToken(self, email=None, password=None, key_name=None):
         key_count = 1
         keys = _keys = []
         KEY_MAXIMUM = 10

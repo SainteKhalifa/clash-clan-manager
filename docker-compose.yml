@@ -1,0 +1,10 @@
+services:
+  clash-clan-manager:
+    container_name: Clash_Of_Clan_API
+    build: .
+    ports:
+      - "5000:5000"
+    volumes:
+      - ./data:/data
+      - /etc/localtime:/etc/localtime:ro
+      - /etc/timezone:/etc/timezone:ro

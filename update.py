@@ -356,7 +356,7 @@ def processResults():
     
     page = mytemplate.render(clan=clanManager.clanDetails,
                              members=members, 
-                             warlog=clanManager.storage.getWarLog()["items"], 
+                             warlog=clanManager.storage.getWarLog().get("items", []),
                              warState=clanManager.storage.getWarLog()["currentState"],
                              lastUpdated=clan["lastUpdated"],
                              banners=getBanners()
